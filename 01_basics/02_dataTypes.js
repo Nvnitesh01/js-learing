@@ -12,13 +12,14 @@ let age = 35
 let isLoggedIn = false
 let state;
 
-// number => 2 to power 53
-// bigint
-// string => ""
-// boolean => true/false
-// null => standalone value
-// undefined => 
-// symbol => unique
+// number = 2 to power 53
+// bigint = for large numbers 
+// string = "assembly of characters"
+// boolean = true/false
+// null = stand alone value (type = object)
+// undefined = kinda place holder for a value which is not defined yet (type = undefined) 
+// symbol = uniqueness
+// NaN (not a number) = special type
 
 // object
 
