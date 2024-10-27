@@ -49,23 +49,23 @@ let str2 = " Nitesh"
 let str3 = (str1 + str2)  // strings can only can added not substracted or multiply, divison etc
 console.log(str3);
 
-// console.log("1" + 2);
-// console.log(1 + "2");
-// console.log("1" + 2 + 2);
-// console.log(1 + 2 + "2");
+// console.log("1" + 2);   //  if string comes first then every number after string count as string ex- console.log("1" + 2); = 12
+// console.log(1 + "2");            // answer = 12 
+// console.log("1" + 2 + 2);       // answer = 122
+// console.log(1 + 2 + "2");       // ans = 32
 
-// console.log( (3 + 4) * 5 % 3);
+console.log( (3 + 4) * 5 % 3);  // use parentheses symbol () 
 
 // console.log(+true);
 // console.log(+"");
 
-let num1, num2, num3
+// let num1, num2, num3
 
-num1 = num2 = num3 = 2 + 2
+// num1 = num2 = num3 = 2 + 2
 
-let gameCounter = 100
-++gameCounter;
-console.log(gameCounter);
+// let gameCounter = 100
+// ++gameCounter;
+// console.log(gameCounter);
 
 // link to study
 // https://tc39.es/ecma262/multipage/abstract-operations.html#sec-type-conversion
