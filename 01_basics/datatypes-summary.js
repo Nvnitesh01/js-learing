@@ -38,3 +38,34 @@ const myFunctions = function(){
 console.log(typeof anotherId);
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+
+
+
+/**************** Memory ***********************/
+
+//there are 2 type of memories - Stack and Heap
+
+// Stack memory used in primitive dataypes
+// Heap memory used in non-primitive/refrence datatypes
+
+// let myLaptopName = "Lenovo";
+// let anotherName = myLaptopName;
+// anotherName = "Dell";
+
+// console.log(myLaptopName);
+// console.log(anotherName);
+
+let userOne = {
+    email: "nvlogan01@gmail.com",
+    upi: "user@sbi"
+}
+
+let userTwo = userOne;
+userTwo.email = "nvnitesh01@gmal.com"   // .email ... with(./dot) this is how we change value of property in objects.
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
+
+
