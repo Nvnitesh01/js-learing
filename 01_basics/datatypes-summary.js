@@ -63,9 +63,17 @@ let userOne = {
 
 let userTwo = userOne;
 userTwo.email = "nvnitesh01@gmal.com"   // .email ... with(./dot) this is how we change value of property in objects.
+userTwo.upi = "user@pnb"                // .upi ... with(./dot) this is how we change value of property in objects.
+
 
 console.log(userOne.email);
 console.log(userTwo.email);
+
+console.log(userOne.upi);
+console.log(userTwo.upi);
+
+
+
 
 
 
