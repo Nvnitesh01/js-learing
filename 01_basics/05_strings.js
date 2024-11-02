@@ -37,11 +37,4 @@ console.log(url.replace('%20', '-'));   //The replace() method of String values 
 const str = 'The quick brown fox jumps over the lazy dog.';
 console.log(str.split(' '));
 
-
-                                    
-
-
-
-
-
-
+                
