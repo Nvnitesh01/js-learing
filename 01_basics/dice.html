@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dice Game</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+    #rollButton {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Dice Game</h1>
+  <p>Click the button to roll the dice!</p>
+
+  <button id="rollButton">Roll the Dice</button>
+
+  <div id="result"></div>
+
+  <script>
+    function rollDice() {
+      // Generates a random number between 1 and 6
+      return Math.floor(Math.random() * 6) + 1;
+    }
+
+    document.getElementById("rollButton").addEventListener("click", function() {
+      // Roll dice for both players
+      const player1Roll = rollDice();
+      const player2Roll = rollDice();
+
+      // Display the results
+      let resultMessage = `Player 1 rolled: ${player1Roll}<br>Player 2 rolled: ${player2Roll}<br>`;
+
+      // Determine the winner
+      if (player1Roll > player2Roll) {
+        resultMessage += "<strong>Player 1 wins!</strong>";
+      } else if (player2Roll > player1Roll) {
+        resultMessage += "<strong>Player 2 wins!</strong>";
+      } else {
+        resultMessage += "<strong>It's a tie!</strong>";
+      }
+
+      document.getElementById("result").innerHTML = resultMessage;
+    });
+  </script>
+
+</body>
+</html>

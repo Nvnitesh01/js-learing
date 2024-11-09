@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @keyframes animateColor {
+        0% {
+            filter: hue-rotate(0deg);
+        }
+        100% {
+            filter: hue-rotate(360deg);
+        }
+    }
+
+.container .cloud {
+    position: relative;
+    width: 300px;
+    z-index: 100;
+    filter: drop-shadow(0 0 35px var(--clr));
+}
+.container .cloud h2 {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    white-space: nowrap;
+    color: #000;
+    font-size: 2em;
+    z-index: 1000;
+    font-weight: 400;
+    padding: 0 10px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    background: var(--clr);
+}
+ 
+.container .cloud h2::before {
+    content: '';
+    position: absolute;
+    top: -115px;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 100px;
+    width: 120%;
+    height: 100px;
+    background: var(--clr);
+}
+</style>
+<body>
+    <div class="container">
+        <div class="cloud">
+            <h2>Matrix Rain</h2>
+        </div>
+    </div>
+
+<script>
+    function randomText(){
+        var text = ("!@#%^&*()")
+        letters = text[Math.floor(Math.random() * text.length)];
+        return letters;
+    }
+
+function rain(){
+    let cloud = document.querySelector('.cloud');
+    let e = document.createElement('div');
+    e.classList.add('drop');
+    cloud.appendChild(e);
+
+    let left = Math.floor(Math.random() * 300)
+    let size = Math.random() * 1.5;
+    let duration = Math.random() * 1;
+
+    e.innerText = randomText();
+    e.style.left = left + 'px';
+    e.style.fontSize = 0.5+size + 'em';
+    e.style.animationDuration = 1+duration+'s';
+
+    setTimeout(function(){
+        cloud.removeChild(e)
+    },1000)
+}
+
+setInterval(function(){
+    rain()
+}, 20);
+</script>    
+</body>
+</html>

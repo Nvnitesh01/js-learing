@@ -1,4 +1,4 @@
-const name = "Nitesh"
+const name = "Nitesh" 
 const repoCount = 50
 
 // console.log(name);
