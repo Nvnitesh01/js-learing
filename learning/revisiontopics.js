@@ -26,4 +26,38 @@ const other_heros = ["Martian", "Nightwing", "Invincible"]
 // console.log(allHeros);
 
 const all_new_heros = [...marvel_heros, ...dc_heros, ...other_heros]
-console.log(all_new_heros);
+// console.log(all_new_heros);
+
+
+function addTwoNumbers(number1, number2){
+    // let result = number1 + number2 
+    // return result 
+    return number1 + number2  
+} 
+const result= addTwoNumbers(3, 5)
+// console.log("Return:", result);
+
+function loginUSerMessage(username = "sam"){
+    // if(username === undefined){
+    //     console.log("Please enter name"); 
+    //     return       
+    // }
+                //OR
+    if(!username){
+        console.log("Please enter name"); 
+        return       
+    }
+    return `${username} just logged in`
+}
+// console.log(loginUSerMessage("Nitesh"));
+
+function calculateCartPrice(val1, val2, ...num1) {
+    return val1 + val2 + "," + num1
+}
+
+console.log(calculateCartPrice(200, 400, 500, 2000));
+
+
+
+
+
