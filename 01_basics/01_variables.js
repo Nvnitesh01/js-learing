@@ -8,7 +8,7 @@ let accountState;     //  no value is defined here
 /* prefer not to use var
 because of issue in block scope and funcional scope */
 
-accountEmail = "nvlogan01@gmail,com"
+accountEmail = "nvlogan01@gmail.com"
 accountPassword = "54321"
 accountCity = "Jaipur"
 
